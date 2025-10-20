@@ -22,6 +22,7 @@ test('get order with orderid 5 should receive code 200', async ({ request }) => 
   expect(response.status()).toBe(200)
 })
 
+// negative test
 test('get order with orderid 11 should receive code 400', async ({ request }) => {
   // Build and send a GET request to the server
   const response = await request.get('https://backend.tallinn-learning.ee/test-orders/11')
