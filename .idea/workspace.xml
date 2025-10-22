@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8ec3fb5-5c5c-4437-9699-5ea6145725fa" name="Changes" comment="adding new positive get request test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c8ec3fb5-5c5c-4437-9699-5ea6145725fa" name="Changes" comment="added a negative test case" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +42,7 @@
   "keyToString": {
     "Playwright.get order with correct id should receive code 200.executor": "Run",
     "Playwright.get order with orderid 5 should receive code 200.executor": "Debug",
+    "Playwright.post order with in correct data should receive code 400.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -140,7 +139,14 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1761152291966</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="added a negative test case">
+      <option name="closed" value="true" />
+      <created>1761154711541</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1761154711541</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +154,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding new positive get request test" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding new positive get request test" />
+    <MESSAGE value="added a negative test case" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a negative test case" />
   </component>
 </project>
