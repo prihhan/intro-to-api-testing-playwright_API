@@ -4,18 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8ec3fb5-5c5c-4437-9699-5ea6145725fa" name="Changes" comment="adding new positive get request test">
+    <list default="true" id="c8ec3fb5-5c5c-4437-9699-5ea6145725fa" name="Changes" comment="Delete last blank line">
+      <change afterPath="$PROJECT_DIR$/dto/order-dto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/orderApi.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/order-api.spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/get-request" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,70 +45,98 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="34L1X4mMpQU6AWbM0s33sVUMr3N" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Playwright.Positive: Update order with valid id = 1 + valid api_key | 200 OK.executor": "Run",
+    "Playwright.Positive: Update order with valid id = 2 + valid api_key | 200 OK.executor": "Run",
+    "Playwright.Positive: Update order with valid id = 3 + valid api_key | 200 OK.executor": "Run",
     "Playwright.get order with correct id should receive code 200.executor": "Run",
     "Playwright.get order with orderid 5 should receive code 200.executor": "Debug",
+    "Playwright.post order with in correct data should receive code 400.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feature/dto-pattern",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\Audinga.Cijunaityte\\WebstormProjects\\intro-to-api-testing-playwright\\node_modules\\prettier",
     "ts.external.directory.path": "C:\\Users\\Audinga.Cijunaityte\\WebstormProjects\\intro-to-api-testing-playwright\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Playwright.post order with in correct data should receive code 400">
-    <configuration name="get order with correct id should receive code 200" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="npm.prettier:check">
+    <configuration name="Positive: Update order with valid id = 1 + valid api_key | 200 OK" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/tests/simple-solution-api.spec.ts" />
+      <test-file value="$PROJECT_DIR$/tests/order-api.spec.ts" />
       <test-names>
-        <test-name value="get order with correct id should receive code 200" />
+        <test-name value="Positive: Update order with valid id = 1 + valid api_key | 200 OK" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="get order with orderid 5 should receive code 200" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+    <configuration name="Positive: Update order with valid id = 2 + valid api_key | 200 OK" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/tests/simple-solution-api.spec.ts" />
+      <test-file value="$PROJECT_DIR$/tests/order-api.spec.ts" />
       <test-names>
-        <test-name value="get order with orderid 5 should receive code 200" />
+        <test-name value="Positive: Update order with valid id = 2 + valid api_key | 200 OK" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="post order with in correct data should receive code 400" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+    <configuration name="Positive: Update order with valid id = 3 + valid api_key | 200 OK" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/tests/simple-solution-api.spec.ts" />
+      <test-file value="$PROJECT_DIR$/tests/order-api.spec.ts" />
       <test-names>
-        <test-name value="post order with in correct data should receive code 400" />
+        <test-name value="Positive: Update order with valid id = 3 + valid api_key | 200 OK" />
       </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="prettier:check" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prettier:check" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="prettier:format" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prettier:format" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Playwright.post order with in correct data should receive code 400" />
-        <item itemvalue="Playwright.get order with orderid 5 should receive code 200" />
-        <item itemvalue="Playwright.get order with correct id should receive code 200" />
-        <item itemvalue="Playwright.get order with orderid 5 should receive code 200" />
-        <item itemvalue="Playwright.get order with correct id should receive code 200" />
+        <item itemvalue="npm.prettier:check" />
+        <item itemvalue="npm.prettier:format" />
+        <item itemvalue="Playwright.Positive: Update order with valid id = 3 + valid api_key | 200 OK" />
+        <item itemvalue="Playwright.Positive: Update order with valid id = 2 + valid api_key | 200 OK" />
+        <item itemvalue="Playwright.Positive: Update order with valid id = 1 + valid api_key | 200 OK" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +177,14 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1761152291966</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="added a negative test case">
+      <option name="closed" value="true" />
+      <created>1761154711541</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1761154711541</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +192,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding new positive get request test" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding new positive get request test" />
+    <MESSAGE value="added a negative test case" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a negative test case" />
   </component>
 </project>

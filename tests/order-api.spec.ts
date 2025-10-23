@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test'
 import { StatusCodes } from 'http-status-codes'
+import { OrderDto } from '../dto/order-dto'
 
 const url = 'https://backend.tallinn-learning.ee/test-orders/'
 
@@ -10,35 +11,18 @@ const url = 'https://backend.tallinn-learning.ee/test-orders/'
 const validApiKey = '1234567891234567'
 
 test('Positive: Update order with valid id = 1 + valid api_key | 200 OK', async ({ request }) => {
-  const body = {
-    status: 'OPEN',
-    courierId: 0,
-    customerName: 'string',
-    customerPhone: 'string',
-    comment: 'string',
-    id: 1,
-  }
+  const requestBody = new OrderDto('OPEN', 0, 'John', '999889999', 'comment', 7)
   const headers = { api_key: validApiKey }
-
-  const response = await request.put(url + '1', { data: body, headers })
+  const response = await request.put(url + '1', { data: requestBody, headers })
   console.log('response status:', response.status())
   console.log('response body:', await response.json())
-
   expect(response.status()).toBe(StatusCodes.OK)
 })
 
 test('Positive: Update order with valid id = 2 + valid api_key | 200 OK', async ({ request }) => {
-  const body = {
-    status: 'OPEN',
-    courierId: 0,
-    customerName: 'string',
-    customerPhone: 'string',
-    comment: 'string',
-    id: 2,
-  }
+  const requestBody = new OrderDto('OPEN', 0, 'John', '999889999', 'comment', 2)
   const headers = { api_key: validApiKey }
-
-  const response = await request.put(url + '2', { data: body, headers })
+  const response = await request.put(url + '2', { data: requestBody, headers })
   console.log('response status:', response.status())
   console.log('response body:', await response.json())
 
@@ -46,17 +30,9 @@ test('Positive: Update order with valid id = 2 + valid api_key | 200 OK', async 
 })
 
 test('Positive: Update order with valid id = 3 + valid api_key | 200 OK', async ({ request }) => {
-  const body = {
-    status: 'OPEN',
-    courierId: 0,
-    customerName: 'string',
-    customerPhone: 'string',
-    comment: 'string',
-    id: 3,
-  }
+  const requestBody = new OrderDto('OPEN', 0, 'John', '999889999', 'comment', 3)
   const headers = { api_key: validApiKey }
-
-  const response = await request.put(url + '3', { data: body, headers })
+  const response = await request.put(url + '3', { data: requestBody, headers })
   console.log('response status:', response.status())
   console.log('response body:', await response.json())
 
