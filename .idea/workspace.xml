@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8ec3fb5-5c5c-4437-9699-5ea6145725fa" name="Changes" comment="Delete last blank line">
-      <change afterPath="$PROJECT_DIR$/dto/order-dto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/orderApi.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/order-api.spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +33,12 @@
     &quot;assignee&quot;: &quot;audingacij&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/audingacij/intro-to-api-testing-playwright..git&quot;,
-    &quot;accountId&quot;: &quot;5deccbe9-8cb2-47e6-9337-c112b04e43ec&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/prihhan/intro-to-api-testing-playwright_API.git",
+    "accountId": "0b30b51b-fc9c-48e6-bc7c-1112367c6d08"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -62,14 +60,16 @@
     "Playwright.post order with in correct data should receive code 400.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/dto-pattern",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\Audinga.Cijunaityte\\WebstormProjects\\intro-to-api-testing-playwright\\node_modules\\prettier",
-    "ts.external.directory.path": "C:\\Users\\Audinga.Cijunaityte\\WebstormProjects\\intro-to-api-testing-playwright\\node_modules\\typescript\\lib",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "C:\\Users\\Prihhan\\WebstormProjects\\intro-to-api-testing-playwright_API\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -134,16 +134,16 @@
       <list>
         <item itemvalue="npm.prettier:check" />
         <item itemvalue="npm.prettier:format" />
+        <item itemvalue="Playwright.Positive: Update order with valid id = 1 + valid api_key | 200 OK" />
         <item itemvalue="Playwright.Positive: Update order with valid id = 3 + valid api_key | 200 OK" />
         <item itemvalue="Playwright.Positive: Update order with valid id = 2 + valid api_key | 200 OK" />
-        <item itemvalue="Playwright.Positive: Update order with valid id = 1 + valid api_key | 200 OK" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.26830.93" />
+        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-WS-252.26199.162" />
       </set>
     </attachedChunks>
   </component>
@@ -155,6 +155,7 @@
       <option name="presentableId" value="Default" />
       <updated>1760978075056</updated>
       <workItem from="1760978076603" duration="1365000" />
+      <workItem from="1761412246455" duration="548000" />
     </task>
     <task id="LOCAL−00001" summary="adding new positive get request test">
       <option name="closed" value="true" />
