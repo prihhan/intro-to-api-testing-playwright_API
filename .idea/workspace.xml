@@ -111,7 +111,7 @@
       <recent name="C:\Users\Prihhan\WebstormProjects\intro-to-api-testing-playwright_API\src" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.prettier:check">
+  <component name="RunManager" selected="npm.lint">
     <configuration name="loan-request-api.spec.ts" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
@@ -121,23 +121,21 @@
       <test-file value="$PROJECT_DIR$/tests/loan-request-api.spec.ts" />
       <method v="2" />
     </configuration>
-    <configuration name="should return Positive decision (Medium risk) for valid user" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/tests/loan-request-api.spec.ts" />
-      <test-names>
-        <test-name value="should return Positive decision (Medium risk) for valid user" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <configuration name="format" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="format" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -165,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.lint" />
         <item itemvalue="npm.prettier:check" />
         <item itemvalue="npm.prettier:format" />
         <item itemvalue="npm.format" />
         <item itemvalue="Playwright.loan-request-api.spec.ts" />
-        <item itemvalue="Playwright.should return Positive decision (Medium risk) for valid user" />
       </list>
     </recent_temporary>
   </component>
