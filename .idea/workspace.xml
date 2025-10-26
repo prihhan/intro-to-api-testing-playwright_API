@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8ec3fb5-5c5c-4437-9699-5ea6145725fa" name="Changes" comment="formatting adjusted">
-      <change afterPath="$PROJECT_DIR$/dto/user-dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dto/order-dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dto/order-dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="c8ec3fb5-5c5c-4437-9699-5ea6145725fa" name="Changes" comment="added DTO object and changed folder structure">
+      <change afterPath="$PROJECT_DIR$/dto/LoanRequestDTO.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/loan-request-api.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dto/user-dto.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/playwright.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/playwright.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/order-api.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/order-api.spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,14 +56,25 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Playwright.Negative: Update order with invalid api_key = 123 | 401 Unauthorized.executor": "Debug",
+    "Playwright.Negative: Update order with invalid api_key = 123 | 401 Unauthorized.executor": "Run",
     "Playwright.Positive: Update order with valid id = 1 + valid api_key | 200 OK.executor": "Run",
     "Playwright.Positive: Update order with valid id = 2 + valid api_key | 200 OK.executor": "Run",
     "Playwright.Positive: Update order with valid id = 3 + valid api_key | 200 OK.executor": "Run",
     "Playwright.get order with correct id should receive code 200.executor": "Run",
     "Playwright.get order with orderid 5 should receive code 200.executor": "Debug",
+    "Playwright.loan-request-api.spec.ts.executor": "Run",
     "Playwright.order-api.spec.ts.executor": "Run",
     "Playwright.post order with in correct data should receive code 400.executor": "Run",
+    "Playwright.should return APPROVED decision for valid applicant (positive case).executor": "Run",
+    "Playwright.should return NEGATIVE decision for valid applicant.executor": "Run",
+    "Playwright.should return POSITIVE decision for valid applicant (positive case).executor": "Run",
+    "Playwright.should return POSITIVE decision for valid applicant.executor": "Run",
+    "Playwright.should return Positive decision (Low risk) for valid applicant.executor": "Run",
+    "Playwright.should return Positive decision (Medium risk) for valid applicant.executor": "Run",
+    "Playwright.should return Positive decision (Medium risk) for valid user.executor": "Run",
+    "Playwright.✅ should return APPROVED decision for valid applicant (positive case).executor": "Run",
+    "Playwright.✅ should return POSITIVE decision for valid applicant (1).executor": "Run",
+    "Playwright.✅ should return POSITIVE decision for valid applicant.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "homework/hw-10",
@@ -85,73 +95,77 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Prihhan\WebstormProjects\intro-to-api-testing-playwright_API\tests" />
+      <recent name="C:\Users\Prihhan\WebstormProjects\intro-to-api-testing-playwright_API" />
       <recent name="C:\Users\Prihhan\WebstormProjects\intro-to-api-testing-playwright_API\src\tests\api" />
       <recent name="C:\Users\Prihhan\WebstormProjects\intro-to-api-testing-playwright_API\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Playwright.Positive: Update order with valid id = 1 + valid api_key | 200 OK">
-    <configuration name="Negative: Update order with invalid api_key = 123 | 401 Unauthorized" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/tests/order-api.spec.ts" />
-      <test-names>
-        <test-name value="Negative: Update order with invalid api_key = 123 | 401 Unauthorized" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Positive: Update order with valid id = 1 + valid api_key | 200 OK" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/tests/order-api.spec.ts" />
-      <test-names>
-        <test-name value="Positive: Update order with valid id = 1 + valid api_key | 200 OK" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Positive: Update order with valid id = 2 + valid api_key | 200 OK" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/tests/order-api.spec.ts" />
-      <test-names>
-        <test-name value="Positive: Update order with valid id = 2 + valid api_key | 200 OK" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="order-api.spec.ts" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Playwright.loan-request-api.spec.ts">
+    <configuration name="loan-request-api.spec.ts" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/tests/order-api.spec.ts" />
+      <test-file value="$PROJECT_DIR$/tests/loan-request-api.spec.ts" />
       <method v="2" />
     </configuration>
-    <configuration name="prettier:format" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="prettier:format" />
-      </scripts>
+    <configuration name="should return NEGATIVE decision for valid applicant" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
+      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
+      <working-dir value="$PROJECT_DIR$" />
       <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/loan-request-api.spec.ts" />
+      <test-names>
+        <test-name value="should return NEGATIVE decision for valid applicant" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="should return POSITIVE decision for valid applicant" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/loan-request-api.spec.ts" />
+      <test-names>
+        <test-name value="should return POSITIVE decision for valid applicant" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="should return Positive decision (Medium risk) for valid applicant" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/loan-request-api.spec.ts" />
+      <test-names>
+        <test-name value="should return Positive decision (Medium risk) for valid applicant" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="should return Positive decision (Medium risk) for valid user" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/loan-request-api.spec.ts" />
+      <test-names>
+        <test-name value="should return Positive decision (Medium risk) for valid user" />
+      </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Playwright.Positive: Update order with valid id = 1 + valid api_key | 200 OK" />
-        <item itemvalue="Playwright.Positive: Update order with valid id = 2 + valid api_key | 200 OK" />
-        <item itemvalue="Playwright.order-api.spec.ts" />
-        <item itemvalue="Playwright.Negative: Update order with invalid api_key = 123 | 401 Unauthorized" />
-        <item itemvalue="npm.prettier:format" />
+        <item itemvalue="Playwright.loan-request-api.spec.ts" />
+        <item itemvalue="Playwright.should return Positive decision (Medium risk) for valid user" />
+        <item itemvalue="Playwright.should return POSITIVE decision for valid applicant" />
+        <item itemvalue="Playwright.should return Positive decision (Medium risk) for valid applicant" />
+        <item itemvalue="Playwright.should return NEGATIVE decision for valid applicant" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +186,7 @@
       <workItem from="1760978076603" duration="1365000" />
       <workItem from="1761412246455" duration="1015000" />
       <workItem from="1761464783553" duration="6385000" />
-      <workItem from="1761479901882" duration="407000" />
+      <workItem from="1761479901882" duration="9224000" />
     </task>
     <task id="LOCAL−00001" summary="adding new positive get request test">
       <option name="closed" value="true" />
@@ -210,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761412922205</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added DTO object and changed folder structure">
+      <option name="closed" value="true" />
+      <created>1761480446084</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1761480446084</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +242,7 @@
     <MESSAGE value="adding new positive get request test" />
     <MESSAGE value="added a negative test case" />
     <MESSAGE value="formatting adjusted" />
-    <option name="LAST_COMMIT_MESSAGE" value="formatting adjusted" />
+    <MESSAGE value="added DTO object and changed folder structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="added DTO object and changed folder structure" />
   </component>
 </project>
