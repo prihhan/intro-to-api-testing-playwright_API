@@ -15,27 +15,18 @@ export class OrderDto {
     this.id = id
   }
 
-//method to create a new instance with random data
-  static createOpenOrderWithRandomData (): OrderDto {
-    return new OrderDto(
-
-        'John Doe',
-    '+123456789',
-      'Urgent order',
-      Math.floor(Math.random() * 100),
-    )
+  //method to create a new instance with random data
+  static createOpenOrderWithRandomData(): OrderDto {
+    return new OrderDto('John Doe', '+123456789', 'Urgent order', Math.floor(Math.random() * 100))
   }
 
   //low prio order
-  static createLowPrioOrderWithRandomData (): OrderDto {
+  static createLowPrioOrderWithRandomData(): OrderDto {
     return new OrderDto(
-
       'Jimmy Jones',
       '+123456789',
       'Low priority',
       Math.floor(Math.random() * 100),
     )
   }
-
 }
-
