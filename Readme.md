@@ -18,3 +18,6 @@
 | Negative: Get order with valid username: username4, missing password      | GET    | 500 Undocumented |
 | Negative: Get order with empty username and password                      | GET    | 500 Undocumented |
 | Negative: Get order with empty username, valid password: Valid123         | GET    | 500 Undocumented |
+| Negative: Negative decision                                               | POST   | 200 OK           |
+| Positive: Positive decision with medium risk                              | POST   | 200 OK           |
+| Positive: Positive decision with low risk                                 | POST   | 200 OK           |
