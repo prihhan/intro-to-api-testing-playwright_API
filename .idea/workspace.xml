@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8ec3fb5-5c5c-4437-9699-5ea6145725fa" name="Changes" comment="- created new homework branch&#10;- added test cases using DTO structure&#10;- updated readme file">
-      <change afterPath="$PROJECT_DIR$/dto/login-dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/login.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c8ec3fb5-5c5c-4437-9699-5ea6145725fa" name="Changes" comment="dto with env var + pipeline">
+      <change beforePath="$PROJECT_DIR$/tests/loan-request-api.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/loan-request-api.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/login.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/order-api.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/order-api.spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="homework/hw-10" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -74,13 +74,13 @@
     "Playwright.should return Positive decision (Low risk) for valid applicant.executor": "Run",
     "Playwright.should return Positive decision (Medium risk) for valid applicant.executor": "Run",
     "Playwright.should return Positive decision (Medium risk) for valid user.executor": "Run",
-    "Playwright.should return token with correct username and password.executor": "Debug",
+    "Playwright.should return token with correct username and password.executor": "Run",
     "Playwright.✅ should return APPROVED decision for valid applicant (positive case).executor": "Run",
     "Playwright.✅ should return POSITIVE decision for valid applicant (1).executor": "Run",
     "Playwright.✅ should return POSITIVE decision for valid applicant.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feature/env-vars-token",
     "junie.onboarding.icon.badge.shown": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -88,6 +88,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "npm.format.executor": "Run",
+    "npm.lint.executor": "Run",
     "npm.prettier:check.executor": "Run",
     "npm.prettier:format.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\Prihhan\\WebstormProjects\\intro-to-api-testing-playwright_API\\node_modules\\prettier",
@@ -105,7 +106,7 @@
       <recent name="C:\Users\Prihhan\WebstormProjects\intro-to-api-testing-playwright_API\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Playwright.should return token with correct username and password">
+  <component name="RunManager" selected="npm.lint">
     <configuration name="All Tests" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
@@ -115,30 +116,6 @@
         <env name="PASSWORD" value="whe7s5qbYbfT2n" />
       </envs>
       <scope-kind value="ALL" />
-      <method v="2" />
-    </configuration>
-    <configuration name="should return Negative decision for valid user" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/tests/loan-request-api.spec.ts" />
-      <test-names>
-        <test-name value="should return Negative decision for valid user" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="should return Positive decision (Medium risk) for valid user" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/tests/loan-request-api.spec.ts" />
-      <test-names>
-        <test-name value="should return Positive decision (Medium risk) for valid user" />
-      </test-names>
       <method v="2" />
     </configuration>
     <configuration name="should return token with correct username and password" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
@@ -166,20 +143,40 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="prettier:check" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prettier:check" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="prettier:format" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prettier:format" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="npm.prettier:format" />
       <item itemvalue="npm.lint" />
+      <item itemvalue="npm.prettier:check" />
       <item itemvalue="Playwright.should return token with correct username and password" />
-      <item itemvalue="Playwright.should return Negative decision for valid user" />
-      <item itemvalue="Playwright.should return Positive decision (Medium risk) for valid user" />
       <item itemvalue="Playwright.All Tests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.lint" />
+        <item itemvalue="npm.prettier:check" />
+        <item itemvalue="npm.prettier:format" />
         <item itemvalue="Playwright.should return token with correct username and password" />
         <item itemvalue="Playwright.All Tests" />
-        <item itemvalue="Playwright.should return Positive decision (Medium risk) for valid user" />
-        <item itemvalue="Playwright.should return Negative decision for valid user" />
-        <item itemvalue="npm.lint" />
       </list>
     </recent_temporary>
   </component>
@@ -254,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761489385872</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="dto with env var + pipeline">
+      <option name="closed" value="true" />
+      <created>1761589745182</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1761589745182</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,7 +271,8 @@
     <MESSAGE value="formatting adjusted" />
     <MESSAGE value="added DTO object and changed folder structure" />
     <MESSAGE value="- created new homework branch&#10;- added test cases using DTO structure&#10;- updated readme file" />
-    <option name="LAST_COMMIT_MESSAGE" value="- created new homework branch&#10;- added test cases using DTO structure&#10;- updated readme file" />
+    <MESSAGE value="dto with env var + pipeline" />
+    <option name="LAST_COMMIT_MESSAGE" value="dto with env var + pipeline" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
