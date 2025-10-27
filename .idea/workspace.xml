@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8ec3fb5-5c5c-4437-9699-5ea6145725fa" name="Changes" comment="dto with env var + pipeline">
-      <change beforePath="$PROJECT_DIR$/tests/loan-request-api.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/loan-request-api.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/login.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/order-api.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/order-api.spec.ts" afterDir="false" />
-    </list>
+    <list default="true" id="c8ec3fb5-5c5c-4437-9699-5ea6145725fa" name="Changes" comment="dto with env var + pipeline" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +102,7 @@
       <recent name="C:\Users\Prihhan\WebstormProjects\intro-to-api-testing-playwright_API\src" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.lint">
+  <component name="RunManager" selected="npm.prettier:check">
     <configuration name="All Tests" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
@@ -172,9 +168,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.lint" />
         <item itemvalue="npm.prettier:check" />
         <item itemvalue="npm.prettier:format" />
+        <item itemvalue="npm.lint" />
         <item itemvalue="Playwright.should return token with correct username and password" />
         <item itemvalue="Playwright.All Tests" />
       </list>
@@ -259,7 +255,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761589745182</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="dto with env var + pipeline">
+      <option name="closed" value="true" />
+      <created>1761590106905</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1761590106905</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
