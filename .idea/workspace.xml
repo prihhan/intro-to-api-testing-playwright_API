@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8ec3fb5-5c5c-4437-9699-5ea6145725fa" name="Changes" comment="dto with env var + pipeline">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c8ec3fb5-5c5c-4437-9699-5ea6145725fa" name="Changes" comment="- Added a positive test verifying JWT token structure for valid credentials.&#10;- Added negative tests for incorrect HTTP method and malformed body.&#10;- Improved test titles for clarity and consistency.">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dto/LoanRequestDTO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dto/LoanRequestDTO.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dto/login-dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dto/login-dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dto/order-dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dto/order-dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playwright.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/playwright.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/login.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login.spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +114,7 @@
       <recent name="C:\Users\Prihhan\WebstormProjects\intro-to-api-testing-playwright_API\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Playwright.should return a valid JWT token when provided with correct credentials">
+  <component name="RunManager" selected="Playwright.should return an error when sending a malformed or invalid request body">
     <configuration name="All Tests" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
@@ -120,41 +124,6 @@
         <env name="PASSWORD" value="whe7s5qbYbfT2n" />
       </envs>
       <scope-kind value="ALL" />
-      <method v="2" />
-    </configuration>
-    <configuration name="All Tests" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs>
-        <env name="USER" value="userprihhan" />
-        <env name="PASSWORD" value="whe7s5qbYbfT2n" />
-      </envs>
-      <scope-kind value="ALL" />
-      <method v="2" />
-    </configuration>
-    <configuration name="should fail when sending incorrect body structure" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/tests/login.spec.ts" />
-      <test-names>
-        <test-name value="should fail when sending incorrect body structure" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="should fail when using incorrect HTTP method" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/tests/login.spec.ts" />
-      <test-names>
-        <test-name value="should fail when using incorrect HTTP method" />
-      </test-names>
       <method v="2" />
     </configuration>
     <configuration name="should return a valid JWT token when provided with correct credentials" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
@@ -172,35 +141,64 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="should return token with correct username and password" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+    <configuration name="should return an error when sending a malformed or invalid request body" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
       <working-dir value="$PROJECT_DIR$" />
-      <envs>
-        <env name="USER" value="userprihhan" />
-        <env name="PASSWORD" value="whe7s5qbYbfT2n" />
-      </envs>
+      <envs />
       <scope-kind value="TEST" />
       <test-file value="$PROJECT_DIR$/tests/login.spec.ts" />
       <test-names>
-        <test-name value="should return token with correct username and password" />
+        <test-name value="should return an error when sending a malformed or invalid request body" />
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="should return an error when using an incorrect HTTP method" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/login.spec.ts" />
+      <test-names>
+        <test-name value="should return an error when using an incorrect HTTP method" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="format" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="format" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="prettier:check" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prettier:check" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Playwright.should fail when sending incorrect body structure" />
-      <item itemvalue="Playwright.should fail when using incorrect HTTP method" />
+      <item itemvalue="npm.format" />
+      <item itemvalue="npm.prettier:check" />
+      <item itemvalue="Playwright.should return an error when sending a malformed or invalid request body" />
+      <item itemvalue="Playwright.should return an error when using an incorrect HTTP method" />
       <item itemvalue="Playwright.should return a valid JWT token when provided with correct credentials" />
-      <item itemvalue="Playwright.should return token with correct username and password" />
-      <item itemvalue="Playwright.All Tests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Playwright.should return an error when sending a malformed or invalid request body" />
+        <item itemvalue="Playwright.should return an error when using an incorrect HTTP method" />
         <item itemvalue="Playwright.should return a valid JWT token when provided with correct credentials" />
-        <item itemvalue="Playwright.should return token with correct username and password" />
-        <item itemvalue="Playwright.All Tests" />
-        <item itemvalue="Playwright.should fail when sending incorrect body structure" />
-        <item itemvalue="Playwright.should fail when using incorrect HTTP method" />
+        <item itemvalue="npm.format" />
+        <item itemvalue="npm.prettier:check" />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +222,7 @@
       <workItem from="1761479901882" duration="9942000" />
       <workItem from="1761594713455" duration="125000" />
       <workItem from="1761596150015" duration="464000" />
-      <workItem from="1761675000964" duration="6646000" />
+      <workItem from="1761675000964" duration="7035000" />
     </task>
     <task id="LOCAL−00001" summary="adding new positive get request test">
       <option name="closed" value="true" />
@@ -302,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761590149453</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="- Added a positive test verifying JWT token structure for valid credentials.&#10;- Added negative tests for incorrect HTTP method and malformed body.&#10;- Improved test titles for clarity and consistency.">
+      <option name="closed" value="true" />
+      <created>1761681873736</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1761681873736</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,6 +321,7 @@
     <MESSAGE value="added DTO object and changed folder structure" />
     <MESSAGE value="- created new homework branch&#10;- added test cases using DTO structure&#10;- updated readme file" />
     <MESSAGE value="dto with env var + pipeline" />
-    <option name="LAST_COMMIT_MESSAGE" value="dto with env var + pipeline" />
+    <MESSAGE value="- Added a positive test verifying JWT token structure for valid credentials.&#10;- Added negative tests for incorrect HTTP method and malformed body.&#10;- Improved test titles for clarity and consistency." />
+    <option name="LAST_COMMIT_MESSAGE" value="- Added a positive test verifying JWT token structure for valid credentials.&#10;- Added negative tests for incorrect HTTP method and malformed body.&#10;- Improved test titles for clarity and consistency." />
   </component>
 </project>

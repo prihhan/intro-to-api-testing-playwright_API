@@ -4,7 +4,9 @@ import { LoginDTO } from '../dto/login-dto'
 
 const source_url = 'https://backend.tallinn-learning.ee/login/student'
 
-test('should return a valid JWT token when provided with correct credentials', async ({ request }) => {
+test('should return a valid JWT token when provided with correct credentials', async ({
+  request,
+}) => {
   const requestBody: LoginDTO = LoginDTO.createLoginDto()
   const response = await request.post(source_url, {
     data: requestBody,
@@ -27,7 +29,9 @@ test('should return an error when using an incorrect HTTP method', async ({ requ
   expect(statusCode).toBe(statusCode)
 })
 
-test('should return an error when sending a malformed or invalid request body', async ({ request }) => {
+test('should return an error when sending a malformed or invalid request body', async ({
+  request,
+}) => {
   const invalidBody = {
     user_name: 'invalidField', // wrong user
     pass: '1234', // wrong pass
@@ -39,7 +43,6 @@ test('should return an error when sending a malformed or invalid request body', 
 
   const statusCode = response.status()
   console.log('Incorrect body response status:', statusCode)
-
 
   expect(statusCode).toBe(statusCode)
 })
