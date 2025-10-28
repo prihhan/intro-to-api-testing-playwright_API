@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8ec3fb5-5c5c-4437-9699-5ea6145725fa" name="Changes" comment="dto with env var + pipeline" />
+    <list default="true" id="c8ec3fb5-5c5c-4437-9699-5ea6145725fa" name="Changes" comment="dto with env var + pipeline">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dto/login-dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dto/login-dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/login.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login.spec.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="feature/env-vars-token" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,8 +64,11 @@
     "Playwright.get order with correct id should receive code 200.executor": "Run",
     "Playwright.get order with orderid 5 should receive code 200.executor": "Debug",
     "Playwright.loan-request-api.spec.ts.executor": "Run",
+    "Playwright.login.spec.ts.executor": "Run",
     "Playwright.order-api.spec.ts.executor": "Run",
     "Playwright.post order with in correct data should receive code 400.executor": "Run",
+    "Playwright.should fail when sending incorrect body structure.executor": "Run",
+    "Playwright.should fail when using incorrect HTTP method.executor": "Run",
     "Playwright.should return APPROVED decision for valid applicant (positive case).executor": "Run",
     "Playwright.should return NEGATIVE decision for valid applicant.executor": "Run",
     "Playwright.should return Negative decision for valid user.executor": "Run",
@@ -70,13 +77,14 @@
     "Playwright.should return Positive decision (Low risk) for valid applicant.executor": "Run",
     "Playwright.should return Positive decision (Medium risk) for valid applicant.executor": "Run",
     "Playwright.should return Positive decision (Medium risk) for valid user.executor": "Run",
+    "Playwright.should return a valid JWT token when provided with correct credentials.executor": "Run",
     "Playwright.should return token with correct username and password.executor": "Run",
     "Playwright.✅ should return APPROVED decision for valid applicant (positive case).executor": "Run",
     "Playwright.✅ should return POSITIVE decision for valid applicant (1).executor": "Run",
     "Playwright.✅ should return POSITIVE decision for valid applicant.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/env-vars-token",
+    "git-widget-placeholder": "feature/env-vars-token__enhanced",
     "junie.onboarding.icon.badge.shown": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -102,16 +110,66 @@
       <recent name="C:\Users\Prihhan\WebstormProjects\intro-to-api-testing-playwright_API\src" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.prettier:check">
+  <component name="RunManager" selected="Playwright.should return a valid JWT token when provided with correct credentials">
     <configuration name="All Tests" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
       <working-dir value="$PROJECT_DIR$" />
       <envs>
-        <env name="USERNAME" value="userprihhan" />
+        <env name="USER" value="userprihhan" />
         <env name="PASSWORD" value="whe7s5qbYbfT2n" />
       </envs>
       <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="All Tests" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs>
+        <env name="USER" value="userprihhan" />
+        <env name="PASSWORD" value="whe7s5qbYbfT2n" />
+      </envs>
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="should fail when sending incorrect body structure" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/login.spec.ts" />
+      <test-names>
+        <test-name value="should fail when sending incorrect body structure" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="should fail when using incorrect HTTP method" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/login.spec.ts" />
+      <test-names>
+        <test-name value="should fail when using incorrect HTTP method" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="should return a valid JWT token when provided with correct credentials" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs>
+        <env name="USER" value="userprihhan" />
+        <env name="PASSWORD" value="whe7s5qbYbfT2n" />
+      </envs>
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/login.spec.ts" />
+      <test-names>
+        <test-name value="should return a valid JWT token when provided with correct credentials" />
+      </test-names>
       <method v="2" />
     </configuration>
     <configuration name="should return token with correct username and password" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
@@ -119,7 +177,7 @@
       <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
       <working-dir value="$PROJECT_DIR$" />
       <envs>
-        <env name="USERNAME" value="userprihhan" />
+        <env name="USER" value="userprihhan" />
         <env name="PASSWORD" value="whe7s5qbYbfT2n" />
       </envs>
       <scope-kind value="TEST" />
@@ -129,50 +187,20 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="lint" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="prettier:check" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="prettier:check" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="prettier:format" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="prettier:format" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="npm.prettier:format" />
-      <item itemvalue="npm.lint" />
-      <item itemvalue="npm.prettier:check" />
+      <item itemvalue="Playwright.should fail when sending incorrect body structure" />
+      <item itemvalue="Playwright.should fail when using incorrect HTTP method" />
+      <item itemvalue="Playwright.should return a valid JWT token when provided with correct credentials" />
       <item itemvalue="Playwright.should return token with correct username and password" />
       <item itemvalue="Playwright.All Tests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.prettier:check" />
-        <item itemvalue="npm.prettier:format" />
-        <item itemvalue="npm.lint" />
+        <item itemvalue="Playwright.should return a valid JWT token when provided with correct credentials" />
         <item itemvalue="Playwright.should return token with correct username and password" />
         <item itemvalue="Playwright.All Tests" />
+        <item itemvalue="Playwright.should fail when sending incorrect body structure" />
+        <item itemvalue="Playwright.should fail when using incorrect HTTP method" />
       </list>
     </recent_temporary>
   </component>
@@ -194,6 +222,9 @@
       <workItem from="1761412246455" duration="1015000" />
       <workItem from="1761464783553" duration="6385000" />
       <workItem from="1761479901882" duration="9942000" />
+      <workItem from="1761594713455" duration="125000" />
+      <workItem from="1761596150015" duration="464000" />
+      <workItem from="1761675000964" duration="6646000" />
     </task>
     <task id="LOCAL−00001" summary="adding new positive get request test">
       <option name="closed" value="true" />
@@ -263,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761590106905</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="dto with env var + pipeline">
+      <option name="closed" value="true" />
+      <created>1761590149453</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1761590149453</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,16 +316,5 @@
     <MESSAGE value="- created new homework branch&#10;- added test cases using DTO structure&#10;- updated readme file" />
     <MESSAGE value="dto with env var + pipeline" />
     <option name="LAST_COMMIT_MESSAGE" value="dto with env var + pipeline" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/tests/order-api.spec.ts</url>
-          <line>45</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

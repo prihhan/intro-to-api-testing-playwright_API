@@ -1,6 +1,6 @@
 export class LoginDTO {
-  username: string | undefined
-  password: string | undefined
+  username: string
+  password: string
 
 
   constructor(username: string, password: string) {
