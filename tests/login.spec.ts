@@ -26,7 +26,7 @@ test('should return an error when using an incorrect HTTP method', async ({ requ
   const statusCode = response.status()
   console.log('Incorrect method response status:', statusCode)
 
-  expect(statusCode).toBe(statusCode)
+  expect(statusCode).toBe(StatusCodes.METHOD_NOT_ALLOWED);
 })
 
 test('should return an error when sending a malformed or invalid request body', async ({
@@ -44,5 +44,5 @@ test('should return an error when sending a malformed or invalid request body', 
   const statusCode = response.status()
   console.log('Incorrect body response status:', statusCode)
 
-  expect(statusCode).toBe(statusCode)
+  expect(statusCode).toBe(StatusCodes.UNAUTHORIZED);
 })
